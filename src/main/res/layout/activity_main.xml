@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="500dp"
+        android:layout_height="140dp"
+        android:background="@drawable/element_atas"/>
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="500dp"
+        android:layout_height="140dp"
+        android:background="@drawable/element_bawah"
+        android:layout_marginTop="720dp"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="117dp"
+        android:layout_height="171dp"
+        android:background="@drawable/logoamikom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bg"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="46dp"
+        android:hint="Enter your email"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="15dp"
+        android:paddingLeft="15dp"
+        android:textSize="18dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your password"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="16dp"
+        android:paddingLeft="18dp"
+        android:textSize="18dp"
+        android:inputType="textPassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnValidate"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="50dp"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnValidate"
+        android:layout_marginTop="51dp">
+
+        <TextView
+            android:id="@+id/new_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/new_user_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register now"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_toEndOf="@+id/new_user"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
